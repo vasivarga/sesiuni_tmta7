@@ -11,10 +11,15 @@ driver.get(LINK)
 time.sleep(1)
 driver.maximize_window()
 
+# find_element()
+# Functia returneaza un obiect de tip WebElement daca elementul exista
+# Funtia returneaza eroare <<NoSuchElementException>> daca elementul nu este gasit
 element = driver.find_element(By.ID, "first-name")
 print(f"Tipul elementului gasit cu find_element este: {type(element).__name__}")
 
 # find_elements()
+# Functia returneaza o lista cu elemente de tip WebElement daca exista cel putin un element cu selectorul dat
+# Funtia returneaza o lista goala daca nu gaseste niciun element
 element_list = driver.find_elements(By.TAG_NAME, "input")
 print(f"Elementul gasit cu find_elements este: {type(element_list).__name__}")
 
