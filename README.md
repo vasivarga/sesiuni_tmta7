@@ -1,1 +1,3 @@
-"# sesiuni_tmta7" 
+# Sesiuni TMTA7
+
+Test **text boldat**.
